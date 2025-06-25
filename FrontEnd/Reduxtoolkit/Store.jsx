@@ -4,9 +4,10 @@ import adminReducer from "./adminReducer";
 
 const Store = () => {
   const store = configureStore({
-    reducer: { auth: counterReducer,
-              adminAuth:adminReducer
-            },
+    reducer: {
+      auth: counterReducer,
+      adminAuth: adminReducer,
+    },
   });
 
   return store;

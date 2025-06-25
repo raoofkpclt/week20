@@ -13,6 +13,7 @@ import AdminDashboard from "./Pages/adminPages/dashboard";
 import AdminPage from "./Pages/adminPages/login"
 import Add from "./Pages/adminPages/Add&Edit/Add";
 import Edit from "./Pages/adminPages/Add&Edit/Edit";
+import NotFound from "./Pages/NotFound";
 
 
 
@@ -31,6 +32,7 @@ function App() {
 
       <Route path="/addUser" element={<Add />} />
       <Route path="/edit" element={<Edit />} />
+      <Route path='*' element={<NotFound/>}/>
     </Routes>
 
   </div>;
